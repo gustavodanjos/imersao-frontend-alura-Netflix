@@ -1,12 +1,9 @@
-const themeToggleBtn = document.getElementById('theme-toggle');
-const icon = themeToggleBtn.querySelector('.icon');
+const themeCheckbox = document.getElementById('theme-checkbox');
 
-themeToggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    
-    if (document.body.classList.contains('light-mode')) {
-        icon.textContent = '🌙'; // Altera o ícone para lua no modo claro
+themeCheckbox.addEventListener('change', function(e) {
+    if (e.target.checked) {
+        document.body.classList.add('light-mode');
     } else {
-        icon.textContent = '☀️'; // Altera o ícone para sol no modo escuro
+        document.body.classList.remove('light-mode');
     }
 });
