@@ -10,6 +10,8 @@ if (nomePerfil && imagemPerfil) {
     
     if (kidsLink) kidsLink.textContent = nomePerfil;
     if (profileIcon) profileIcon.src = imagemPerfil;
+} else {
+    window.location.href = '../index.html';
 }
 
 const container = document.getElementById('main-content');
