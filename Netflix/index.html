@@ -10,9 +10,15 @@
 </head>
 
 <body>
-    <button id="theme-toggle" class="theme-btn" aria-label="Alternar modo claro/escuro">
-        <span class="icon">🌙</span>
-    </button>
+    <div class="theme-container">
+        <span class="theme-label">Tema</span>
+        <span class="theme-icon">🌙</span>
+        <label class="theme-switch" aria-label="Alternar modo claro/escuro">
+            <input type="checkbox" id="theme-checkbox">
+            <span class="slider"></span>
+        </label>
+        <span class="theme-icon">☀️</span>
+    </div>
     <span class="logo">NETFLIX</span>
     <main>
         <header>
@@ -41,7 +47,7 @@
                     <li>
                         <a class="user-profile" href="#">
                             <figure>
-                                <img src="./assets/img/perfil-1.png" alt="Imagem do perfil 3">
+                                <img src="./assets/img/perfil-3.png" alt="Imagem do perfil 3">
                                 <figcaption>Usuário 3</figcaption>
                             </figure>
                         </a>
@@ -49,7 +55,7 @@
                     <li>
                         <a class="user-profile" href="#">
                             <figure>
-                                <img src="./assets/img/perfil-2.png" alt="Imagem do perfil 4">
+                                <img src="./assets/img/perfil-4.png" alt="Imagem do perfil 4">
                                 <figcaption>Usuário 4</figcaption>
                             </figure>
                         </a>
