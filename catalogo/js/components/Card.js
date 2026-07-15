@@ -10,14 +10,14 @@ export function createCard(item) {
     const img = document.createElement('img');
     img.src = item.img;
     img.alt = `Movie cover`;
+    img.loading = "lazy";
+    img.width = 250;
+    img.height = 140;
 
-    const iframe = document.createElement('iframe');
-    iframe.frameBorder = "0";
-    iframe.allow = "autoplay; encrypted-media";
+    let iframe = null;
 
     const videoId = getYouTubeId(item.youtube);
 
-    card.appendChild(iframe);
     card.appendChild(img);
 
     const ageBadge = getRandomAgeBadge();
@@ -72,6 +72,13 @@ export function createCard(item) {
         }
 
         playTimeout = setTimeout(() => {
+            if (!iframe) {
+                iframe = document.createElement('iframe');
+                iframe.frameBorder = "0";
+                iframe.allow = "autoplay; encrypted-media";
+                iframe.title = "Trailer do filme";
+                card.insertBefore(iframe, img);
+            }
             iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&loop=1&playlist=${videoId}`;
             iframe.classList.add('playing');
             img.classList.add('playing-video');
@@ -80,9 +87,13 @@ export function createCard(item) {
 
     card.addEventListener('mouseleave', () => {
         clearTimeout(playTimeout);
-        iframe.classList.remove('playing');
+        if (iframe) {
+            iframe.classList.remove('playing');
+            iframe.src = "";
+            iframe.remove();
+            iframe = null;
+        }
         img.classList.remove('playing-video');
-        iframe.src = "";
         card.classList.remove('origin-left');
         card.classList.remove('origin-right');
     });

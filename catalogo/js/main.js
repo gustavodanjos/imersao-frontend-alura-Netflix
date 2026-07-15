@@ -1,6 +1,26 @@
 import { categories } from './data.js';
 import { createCarousel } from './components/Carousel.js';
 
+const themeCheckbox = document.getElementById('theme-checkbox');
+
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'light') {
+    document.body.classList.add('light-mode');
+    if (themeCheckbox) themeCheckbox.checked = true;
+}
+
+if (themeCheckbox) {
+    themeCheckbox.addEventListener('change', function(e) {
+        if (e.target.checked) {
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+}
+
 const nomePerfil = localStorage.getItem('perfilAtivoNome');
 const imagemPerfil = localStorage.getItem('perfilAtivoImagem');
 
