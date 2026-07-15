@@ -1,10 +1,14 @@
 export const categories = [
     {
-        title: "Épicos",
+        title: "Mais assistidos",
         items: [
             {
                 img: "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg", top10: true, badge: "Clássico", badgeColor: "red", progress: 0,
                 youtube: "https://www.youtube.com/watch?v=bLvqoHBptjg"
+            },
+            {
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhYJr4LkyRWyCukIKab5ox5ePlhndBLjnaFjm6LFECMw&s=10.png", top10: true, badge: "Clássico", badgeColor: "red", progress: 50,
+                youtube: "https://www.youtube.com/watch?v=8ugaeA-nMTc&pp=ygUhdHJhaWxlciBob21lbSBkZSBmZXJybyAxIG9yaWdpbmFs"
             },
             {
                 img: "https://aventurasnahistoria.com.br/wp-content/uploads/entretenimento/gladiador_2_VvnGVes.jpg", progress: 0,
