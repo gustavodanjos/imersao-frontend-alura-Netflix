@@ -1,12 +1,22 @@
 const themeCheckbox = document.getElementById('theme-checkbox');
 
-themeCheckbox.addEventListener('change', function(e) {
-    if (e.target.checked) {
-        document.body.classList.add('light-mode');
-    } else {
-        document.body.classList.remove('light-mode');
-    }
-});
+const currentTheme = localStorage.getItem('theme');
+if (currentTheme === 'light') {
+    document.body.classList.add('light-mode');
+    if (themeCheckbox) themeCheckbox.checked = true;
+}
+
+if (themeCheckbox) {
+    themeCheckbox.addEventListener('change', function(e) {
+        if (e.target.checked) {
+            document.body.classList.add('light-mode');
+            localStorage.setItem('theme', 'light');
+        } else {
+            document.body.classList.remove('light-mode');
+            localStorage.setItem('theme', 'dark');
+        }
+    });
+}
 
 // Salvar perfil selecionado no localStorage para usar na página de catálogo
 const profiles = document.querySelectorAll('.user-profile');
