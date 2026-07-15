@@ -9,7 +9,6 @@
 [![CSS3](https://img.shields.io/badge/CSS3-Responsivo-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![Git](https://img.shields.io/badge/Git-Fluxo%20Profissional-F05032?logo=git&logoColor=white)](https://git-scm.com/)
 [![GitHub](https://img.shields.io/badge/GitHub-PRs%20%26%20Reviews-181717?logo=github&logoColor=white)](https://github.com/)
-[![IA](https://img.shields.io/badge/IA-Pair%20Programming-8A2BE2?logo=googlegemini&logoColor=white)](#)
 
 </div>
 
@@ -43,7 +42,7 @@ Ao longo do projeto, foram trabalhadas competências como:
 ## 📁 Estrutura do Projeto
 
 ```text
-atividade-aula1/
+imersao-frontend-alura-Netflix/
 ├── assets/                     # Recursos globais e da tela inicial
 │   ├── css/
 │   │   └── styles.css          # Estilos principais e Dark/Light mode
@@ -66,6 +65,10 @@ atividade-aula1/
 ├── index.html                  # Página inicial ("Quem está assistindo?")
 └── README.md                   # Documentação do projeto
 ```
+## Evidência da Imersão:
+
+> <img width="1908" height="841" alt="netlura2" src="https://github.com/user-attachments/assets/fd0d5c91-b96b-4c79-93ec-2cadd1810d30" />
+
 
 ---
 
