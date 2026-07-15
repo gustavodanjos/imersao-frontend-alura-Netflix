@@ -69,6 +69,13 @@ imersao-frontend-alura-Netflix/
 
 > <img width="1908" height="841" alt="netlura2" src="https://github.com/user-attachments/assets/fd0d5c91-b96b-4c79-93ec-2cadd1810d30" />
 
+* **Performance Lighthouse**
+* `index`
+> <img width="1918" height="876" alt="image" src="https://github.com/user-attachments/assets/ba7a1d8a-a39c-4b4b-baa5-67563a0e6beb" />
+* `catálogo`
+> <img width="1908" height="863" alt="image" src="https://github.com/user-attachments/assets/54072d8a-ca59-4faa-a735-6d4b19e87052" />
+
+
 
 ---
 
