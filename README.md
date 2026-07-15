@@ -142,6 +142,6 @@ O versionamento deste projeto seguiu a convenção [Conventional Commits](https:
 
 📍 Alegrete/RS
 
-_Desenvolvido com IA durante a Imersão Front-End da Alura_
+_Desenvolvido durante a Imersão Front-End com IA da Alura_
 
 </div>
