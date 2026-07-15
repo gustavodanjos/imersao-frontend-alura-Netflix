@@ -2,11 +2,17 @@
     --netflix-red: #E50914;
     --dark-bg: #141414;
     --text-color: #ffffff;
+    --link-color: #e5e5e5;
+    --link-hover: #b3b3b3;
+    --nav-active: #ffffff;
 }
 
 body.light-mode {
     --dark-bg: #f3f3f3;
     --text-color: #141414;
+    --link-color: #333333;
+    --link-hover: #000000;
+    --nav-active: #141414;
 }
 
 * {
@@ -24,12 +30,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #e5e5e5;
+    color: var(--link-color);
     transition: color 0.3s;
 }
 
 a:hover {
-    color: #b3b3b3;
+    color: var(--link-hover);
 }
 
 /* Navbar */
@@ -68,7 +74,7 @@ a:hover {
 
 .nav-links .active {
     font-weight: bold;
-    color: white;
+    color: var(--nav-active);
 }
 
 .icon {
