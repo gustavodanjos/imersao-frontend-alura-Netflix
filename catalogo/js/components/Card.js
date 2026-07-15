@@ -10,10 +10,15 @@ export function createCard(item) {
     const img = document.createElement('img');
     img.src = item.img;
     img.alt = `Movie cover`;
+    img.loading = "lazy";
+    img.width = 250;
+    img.height = 140;
 
     const iframe = document.createElement('iframe');
     iframe.frameBorder = "0";
     iframe.allow = "autoplay; encrypted-media";
+    iframe.loading = "lazy";
+    iframe.title = "Trailer do filme";
 
     const videoId = getYouTubeId(item.youtube);
 
